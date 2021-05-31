@@ -13,6 +13,6 @@ docker push supratikpathak/multi-worker:$SHA
 kubectl apply -f k8s
 
 kubectl set image deployments/server-deployment server=supratikpathak/multi-server:$SHA
-kebectl set image deployments/client-deployment client=supratikpathak/multi-client:$SHA
+kubectl set image deployments/client-deployment client=supratikpathak/multi-client:$SHA
 kubectl set image deployments/worker-deployment worker=supratikpathak/multi-worker:$SHA
 
